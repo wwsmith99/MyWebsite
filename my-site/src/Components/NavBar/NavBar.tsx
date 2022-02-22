@@ -1,15 +1,21 @@
 import Link from 'react-router-dom'
-
+import styles from './NavBar.module.css'
 
 const NavBar = () => {
     
-    
+    const {
+        LinksList
+    } = styles
     
     
     return (
-        <nav>
-            <a href='/'>About me</a>
-        </nav>
+
+            <ul className = {LinksList}>
+                <li><a href='/'>About me</a></li>
+                <li><a href='/Resume'>Resume</a></li>
+                <li><a href='/Projects'>Projects</a></li>
+                <li><a href='/'>Contact me</a></li>
+            </ul>
     )
 }
 

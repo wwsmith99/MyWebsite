@@ -1,0 +1,65 @@
+.Slider{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: fit-content;
+}
+
+.LeftArrow{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 300%;
+    outline:none;
+    border:none;
+    transform: translateY(150%);
+    height:fit-content;
+    
+}
+
+.RightArrow:hover{
+    transition-duration:1s;
+    opacity: 0.8;
+    z-index: 10;
+    transform: scale(1.5) translateY(100%);
+}
+
+.LeftArrow:hover{
+    transition-duration:1s;
+    opacity: 0.8;
+    z-index: 10;
+    transform:  scale(1.5) translateY(100%);
+}
+
+.RightArrow{
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 300%;
+    outline:none;
+    border:none;
+    transform: translateY(150%);
+    height:fit-content;
+}
+
+.Slide{
+    grid-row: 1;
+    grid-column: 2;
+    opacity:0;
+    transform:scale(0.9);
+    transition-duration:1s ease;
+    grid-column-start:2;
+    grid-column-end:2;
+}
+
+.Image{
+    
+    max-width: 100%;
+    height:auto;
+    border-radius: 2.5%;
+}
+
+.SlideActive{
+    grid-row: 1;
+    grid-column:2;
+    opacity: 1;
+    transition-duration:1s;
+    transform:scale(1.00)
+}
